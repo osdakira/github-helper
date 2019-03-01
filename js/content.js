@@ -46,7 +46,10 @@ function makeNewIssueLink() {
   var repositoryRoot = window.location.href.replace(/\/issues\/\d+/, "");
   var newIssueLink = repositoryRoot + "/issues/new";
 
-  var body = document.querySelector('textarea[name="issue[body]"').value;
+  var issueNumber = window.location.href.replace(/.*issues\/(\d+)/, "$1");
+  var thisBody = document.querySelector('textarea[name="issue[body]"').value;
+  var body = "Duplicated from #" + issueNumber + "\n\n" + thisBody;
+
   var title = document.querySelector('input[name="issue[title]"]').value;
   var assignees = Array.from(document.querySelectorAll("[data-assignee-name]")).map(function(node) {
     return node.dataset.assigneeName;
