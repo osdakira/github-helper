@@ -8,5 +8,8 @@ module.exports = {
     "indent": ["error", 2],
     "linebreak-style": ["error", "unix"],
     "semi": ["error", "always"],
+  },
+  "parserOptions": {
+      "sourceType": "module"
   }
 };
