@@ -20,6 +20,12 @@ As of 2019-03-01, it is working.
 Github has `Autolinked references and URLs`.
 However sometimes they are noisy.
 
+4. Add outdated button for comment hiding [Complete]
+
+Github can hide comment.
+But it requires a lot of action.
+
+
 ## Install
 
 https://chrome.google.com/webstore/detail/github-helper/ekoeoijmacaedjfiakhedleldcnopkbp
