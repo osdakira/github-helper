@@ -15,6 +15,11 @@ As of 2019-03-01, it is working.
 
 2. Sort the issues in the project by assignee [Under development]
 
+3. Suppress Commit Links[Complete]
+
+Github has `Autolinked references and URLs`.
+However sometimes they are noisy.
+
 ## Install
 
 https://chrome.google.com/webstore/detail/github-helper/ekoeoijmacaedjfiakhedleldcnopkbp
