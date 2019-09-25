@@ -4,6 +4,7 @@ import renderHideButton from "./MyContnetScript/RenderHideButton";
 
 document.addEventListener("pjax:complete", function(){
   addDuplicateButton();
+  renderHideButton();
 });
 
 addDuplicateButton();
