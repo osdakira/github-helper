@@ -80,9 +80,3 @@ function makeNewIssueLink() {
 
   return newIssueLink + "?" + queryString;
 }
-
-document.addEventListener("pjax:complete", function(){
-  addDuplicateButton();
-});
-
-addDuplicateButton();
