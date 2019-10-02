@@ -17,8 +17,8 @@ function duplicateButtonExists() {
 }
 
 function getIssueActionMenuNode() {
-  var nodes = document.querySelectorAll(".discussion-timeline .js-discussion > .js-comment-container .timeline-comment-actions details-menu");
-  return nodes[1];
+  var nodes = document.querySelectorAll(".js-targetable-comment[id^=issue-] .timeline-comment-actions details-menu:not(.js-add-reaction-popover)");
+  return nodes[0];
 }
 
 function makeDividerNode() {
@@ -80,9 +80,3 @@ function makeNewIssueLink() {
 
   return newIssueLink + "?" + queryString;
 }
-
-document.addEventListener("pjax:complete", function(){
-  addDuplicateButton();
-});
-
-addDuplicateButton();
