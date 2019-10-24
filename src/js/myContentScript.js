@@ -1,6 +1,6 @@
 import addDuplicateButton from "./MyContnetScript/DuplicateButton";
-import suppressCommitLinks from "./MyContnetScript/SuppressCommitLinks";
 import renderHideButton from "./MyContnetScript/RenderHideButton";
+import suppressCommitLinks from "./MyContnetScript/SuppressCommitLinks";
 
 document.addEventListener("pjax:complete", function(){
   addDuplicateButton();
