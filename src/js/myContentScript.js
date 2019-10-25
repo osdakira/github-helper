@@ -20,3 +20,12 @@ call();
 document.addEventListener("pjax:complete", function(){
   call();
 });
+
+chrome.runtime.onMessage.addListener((message) => {
+  if (message.type !== "reload") {
+    return;
+  }
+
+  refreshSuppressing();
+  return;
+});
