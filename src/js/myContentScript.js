@@ -4,16 +4,19 @@ import suppressCommitLinks from "./MyContnetScript/SuppressCommitLinks";
 import suppressTimelineItems from "./MyContnetScript/SuppressTimelineItems";
 import suppressHiddenTimeline from "./MyContnetScript/SuppressHiddenTimeline";
 
-function call() {
-  addDuplicateButton();
+function refreshSuppressing() {
   suppressCommitLinks();
-  renderHideButton();
   suppressTimelineItems();
   suppressHiddenTimeline();
 }
 
+function call() {
+  addDuplicateButton();
+  renderHideButton();
+  refreshSuppressing();
+}
+call();
+
 document.addEventListener("pjax:complete", function(){
   call();
 });
-
-call();
