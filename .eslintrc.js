@@ -3,6 +3,9 @@ module.exports = {
     "browser": true,
     "es6": true,
   },
+  "globals": {
+    "chrome": true,
+  },
   "extends": "eslint:recommended",
   "rules": {
     "indent": ["error", 2],
