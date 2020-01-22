@@ -30,3 +30,17 @@ So add `outdated` button for hiding comment.
 ## Install
 
 https://chrome.google.com/webstore/detail/github-helper/ekoeoijmacaedjfiakhedleldcnopkbp
+
+## development
+
+start development
+
+```
+npm run start
+```
+
+build after development
+
+```
+npm run build
+```
